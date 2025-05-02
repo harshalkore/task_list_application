@@ -1,10 +1,6 @@
 # Task List Applicaiton
 
-• Built a front-end task list application using HTML, CSS and JavaScript.
-• Utilized JavaScript to dynamically update the DOM based on user interactions.
-• Implemented event handling for task management (add, complete, delete).
-• Implemented local storage to save task data between sessions.
-• Included a user-friendly light/dark mode toggle.
+Built a front-end task list application using HTML, CSS, and JavaScript with dynamic DOM updates, event handling for task management, local storage for data persistence, and a user-friendly light/dark mode toggle.
 
 Screenshots of the Web Page are attached below:
 
