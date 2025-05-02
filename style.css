@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+/* container  */
+.container{
+    width: 100%;
+    height: 100vh; 
+    background-color: rgb(208, 208, 208);
+    padding: 25px;
+}
+
+/* task-list app  */
+.task-list_app{
+    width: 100%;
+    max-width: 540px;
+    background-color: rgb(255, 255, 255);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px  black;
+}
+
+/* task-list app header  */
+.task-list_app h2{
+    color: rgb(12, 12, 210);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.task-list_app h2 img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+
+#mode{
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    background: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 155px;
+    margin-bottom: 10px;
+}
+
+.dark{
+    background-color:black;
+
+    .row{
+        background-color:rgb(191, 188, 188) ;
+    }
+    #button{
+        background-color: rgb(77, 77, 76);
+    }
+    .task-list_app h2{
+        color: rgb(39, 39, 39);
+    }
+    .task-list_app{
+        box-shadow: 10px 10px 10px 10px rgb(45, 45, 45);
+    }
+}
+
+.row{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    background-color: #b7edec;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+#button{
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+    background: rgb(36, 160, 237);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(img/unchecked_icon.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #717070;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(img/checked_icon.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+ul li span:hover{
+    background: #f03434;
+}
